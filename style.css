@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Playfair Display", serif;
+    }
+
+.mainbox{
+   background-image: url("tumbler.jpg");
+   height: 100vh;
+   background-size: cover;
+   
+}
+.button1 i{
+    color:black;
+    font-size: 30px;
+    font-weight: 70px;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.3s linear;
+}
+.sidebar{
+    position:fixed;
+    left:-350px; 
+    height:100vh;
+    width:300px;
+    background-color:rgb(238, 101, 124,0.3);
+    box-shadow:0 0 20px rgb(239, 121, 141,0.5) ;
+    transition: all 0.3s linear;
+}
+.sidebar .button2 i{
+    color:black;
+    font-size: 25px;
+    font-weight: 70px;
+    position: absolute;
+    left: 270px;
+    top:10px;
+    transition: all 0.3s linear;
+    
+
+}
+.sidebar .TUMBLER{
+    position:absolute;
+    width:100%;
+    line-height: 60px;
+    box-shadow:0 0 30px rgba(248, 244, 245) ;
+    height:60px;
+}
+.sidebar .TUMBLER a{
+    position:absolute;
+    left:50px;
+    color:rgb(65, 1, 65);
+    text-decoration: none;
+    font-size:2rem;
+    font-weight: 100px;
+
+}
+.sidebar .menu{
+    position:absolute;
+    width:100%;
+    top:75px; 
+}
+.sidebar .menu li{
+    margin-top:6px; 
+    padding:10px 20px;
+}
+.sidebar .menu i,a{
+    color:rgb(55, 1, 55);
+    text-decoration: none;
+    font-size: 25px;
+}
+.sidebar .menu i{
+    padding-right:10px ;
+
+
+}
+.sidebar .socialmedia{
+     position: absolute;
+     left:25%;
+     bottom: 50px;
+
+
+}
+.sidebar .socialmedia i{
+    padding:1px;
+     color:rgb(55, 1, 55);
+     opacity:0.5;
+}
+#check{
+    display:none;
+}
+.sidebar .menu li:hover{
+     box-shadow:0 0 15px rgba(248, 244, 245) ;
+
+}
+.button1 i:hover{
+    font-size: 35px;
+}
+
+.button2 i:hover{
+    font-size: 30px;
+}
+.sidebar .socialmedia i:hover {
+    opacity:1;
+    transform: scale(1.1);
+}
+#check:checked~ .sidebar{
+    left:0;
+}
+#check:checked~h1{
+    opacity: 0.5;
+}
+#check:checked~.search{
+    opacity: 0.5;
+}
+#check:checked~.button1{
+    opacity: 0;
+}
+h1{
+/* text-align: center; */
+    position:absolute;
+      top:100px;
+    /* left:80px; */
+    font-size:9rem;
+    color:rgb(124, 19, 124);
+    text-shadow:15px 15px 8px rgb(120, 60, 120);
+    opacity: 1;
+}
+.search{
+  position: absolute;
+  top: 350px;            /* Adjust so it's right under your TUMBLER text */
+  left:25%;             
+  transform: translateX(-50%);
+  color:white;
+  transition: 0.2s all 0.2s linear; 
+   /* centers horizontally */
+  
+  /* width: 600px;          make it big */
+  /* height: 60px;          make it tall */
+  /* padding: 20px 20px;       padding inside */
+  
+  /* font-size: 2rem; */
+  /* border: 2px solid purple; */
+  /* border-radius: 10px; */
+  /* box-shadow: 4px 4px 10px rgb(107, 41, 52); */
+  /* background-color:rgb(130, 98, 130,0.5); */
+  /* transform: skewX(-20deg); */
+  box-shadow :0 0 10px pink;
+}
+.search:hover{
+    box-shadow: 8px 8px 20px black;
+}
+input{
+width:500px;          /* make it big */
+  height: 40px;          /* make it tall */
+  padding: 0 20px; 
+  background-color:purple;
+  color:white;
+  border:5px solid black;
+  font-size:1.5rem;
+
+}
+button{
+    width:40px;
+    height:50px;
+    padding-top:5px;
+    background-color:purple;
+     border:5px solid black;
+     color:white;
+  
+  
+}
+button i{
+    font-size: 1.2rem;
+}
+
+
+
+
+
